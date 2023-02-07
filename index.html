@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="autor" content="EsneyJem" />
+    <meta name="description" content="Base Program" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Reack" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{.:.:.} | Password Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <h1>EsneyCode{.:.:.}</h1>
+    <div class="passw-container">
+      <div class="passw-header">
+        <div class="passw">
+          <span id="passw">1883ZR%&8un#%90</span>
+          <button id="copy" class="copy">
+            <i class="bi bi-clipboard"></i>
+          </button>
+        </div>
+      </div>
+      <div class="passw-body">
+        <div class="form-control">
+          <label for="Length">Password Length</label>
+          <input
+            class="length"
+            id="length"
+            value="15"
+            type="number"
+            min="2"
+            max="30"
+          />
+        </div>
+        <div class="form-control">
+          <label for="upper">Contain Uppercase letters</label>
+          <input class="checkbox" id="upper" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="lower">Contain Lowercase letters</label>
+          <input class="checkbox" id="lower" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="number">Contain Numbers</label>
+          <input class="checkbox" id="number" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="symbol">Contain Symbols</label>
+          <input class="checkbox" id="symbol" type="checkbox" />
+        </div>
+        <button class="generate" id="generate">Generate Password</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

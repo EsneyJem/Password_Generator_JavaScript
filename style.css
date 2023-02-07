@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: rgb(30, 86, 255);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-height: 100vh;
+
+}
+
+.passw-container {
+    min-width: 400px;
+    background-color: rgb(12, 47, 150);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.passw-header {
+    padding: 1rem;
+
+}
+
+.passw {
+    background-color: rgb(18, 63, 200);
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+
+}
+
+.passw button {
+    background-color: transparent;
+    border: none;
+    /* color: rgb(30, 86, 255); */
+    color: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.passw:hover button {
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+
+.passw .copy .bi {
+    background-color: none;
+    color: white;
+    font-size: 40px;
+}
+
+.passw-body {
+    padding: 1rem;
+}
+
+.form-control {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    font-size: 1.2rem;
+
+}
+
+.generate {
+    background-color: rgb(212, 145, 21);
+    border: none;
+    color: rgb(12, 47, 150);
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+
+.form-control .length {
+    width: 50px;
+    font-size: 1.2rem;
+}
+
+.form-control .checkbox {
+    width: 25px;
+    height: 25px;
+}
